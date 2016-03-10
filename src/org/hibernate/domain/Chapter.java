@@ -29,17 +29,3 @@ public class Chapter {
 				+ chapterNumber + "]";
 	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

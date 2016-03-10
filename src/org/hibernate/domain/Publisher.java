@@ -29,17 +29,3 @@ public class Publisher {
 				+ name + "]";
 	}	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
