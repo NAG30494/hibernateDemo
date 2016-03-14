@@ -27,10 +27,9 @@ public class MessageClient {
 		try {
 			message = new Message("Hello Hibernate!!!");
 			session = HibernateUtils.getSessionFactory().openSession();
-			transaction = session.getTransaction();
-			transaction.begin();
+			session.getTransaction().begin();
 			session.save(message);
-			transaction.commit();
+			session.getTransaction().commit();
 		} catch (HibernateException e) {
 			e.printStackTrace();
 		} finally {
@@ -39,11 +38,8 @@ public class MessageClient {
 				session.close();
 				session = null;
 			}
-
 		}
-
 	}
-
 }
 
 
